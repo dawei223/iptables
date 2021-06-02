@@ -1,0 +1,3 @@
+-A ufw-before-output -p tcp --sport 80:60000 -m quota --quota 5000000000 -j ACCEPT
+
+防止测试小服务器过度使用流量增加钞票开销的限制方法。
