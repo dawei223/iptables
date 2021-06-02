@@ -9,3 +9,10 @@
 
 防止测试小服务器过度使用流量增加钞票开销的限制方法。
 配合计划任务在刷新流量的日子 reload ufw。
+
+
+
+-A PREROUTING -p tcp -d 0.0.0.0 --dport 000000:000000 -j REDIRECT --to-port 00000
+
+端口重定向。
+
