@@ -1,4 +1,11 @@
 -A ufw-before-output -p tcp --sport 80:60000 -m quota --quota 5000000000 -j ACCEPT
 
+参考换算：
+1 byte = 8 bits
+1KiB= 1,024 bytes 
+1MiB= 1,048,576 bytes
+1GiB= 1,073,741,824 bytes
+1TiB= 1,099,511,627,776 bytes
+
 防止测试小服务器过度使用流量增加钞票开销的限制方法。
 配合计划任务在刷新流量的日子 reload ufw。
